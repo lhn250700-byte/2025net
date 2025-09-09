@@ -30,18 +30,40 @@
 .visual {
   height: 100vh;
   min-height: 700px;
-  background-image: url(../img/visual.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
   color: #fff;
 }
 .visual h2 {
   margin-bottom: 14px;
 }
-
+/* visual-swiper */
+.visual .swiper {
+  height: 100%;
+}
+.visual .swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.visual .swiper .s1 {
+  background-image: url(../img/visual1.jpg);
+}
+.visual .swiper .s2 {
+  background-image: url(../img/visual2.jpg);
+}
+.visual .swiper .s3 {
+  background-image: url(../img/visual3.jpg);
+}
+.visual .swiper .s4 {
+  background-image: url(../img/visual4.jpg);
+}
+.visual .swiper .s5 {
+  background-image: url(../img/visual5.jpg);
+}
+.visual .swiper .a {
+}
 /* content */
 .cont {
   padding: 160px 0;
@@ -124,7 +146,7 @@
 }
 .notice .txtWrap {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 32px 0;
 }
 .notice .noticeBox {
@@ -135,14 +157,13 @@
   justify-content: space-between;
   padding: 32px;
   transition: 0.3s;
+  cursor: pointer;
 }
 .notice .noticeBox:hover {
   transform: translate(0, -20px);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), -10px 0 10px rgba(0, 0, 0, 0.2);
 }
-.notice .txtWrap .txtBox {
-}
-.notice .txtWrap .txtBox h5.title {
+.notice .txtWrap h5.title {
   margin-bottom: 12px;
 }
 .notice .txtWrap p {
